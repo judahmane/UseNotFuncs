@@ -21,6 +21,20 @@ void spammer(std::string spam)
 		std::cout << spam << std::endl;
 	}
 }
+void getkeyinput()
+{
+    bool space = true;
+
+	while (space = true)
+	{
+		if (GetAsyncKeyState(VK_SPACE))
+		{
+			Sleep(100);
+			std::cout << "Space\n";
+		}
+	}
+}
+
 int main()
 {
 	std::cout << "That One Famous Debugging Thing\n";
