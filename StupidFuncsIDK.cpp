@@ -63,6 +63,15 @@ void keyinputnice(std::string key)
 		}
 	}
 }
+void rng()
+{
+	int stupid1;
+	srand(time(0));
+	std::cout << "RNG A NUMBER RANGING FROM 1st to 2nd\n";
+	std::cout << "First Number: " << std::endl;
+	std::cin >> stupid1;
+	std::cout << rand() % stupid1;
+}
 
 int main()
 {
