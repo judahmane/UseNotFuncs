@@ -1,6 +1,8 @@
 #include <iostream>
 #include <Windows.h>
 #include <stdlib.h>
+#include <conio.h>
+#include <algorithm>
 
 void stop()
 {
@@ -13,6 +15,14 @@ void add(int num1, int num2)
 void sub(int num1, int num2)
 {
 	std::cout << num1 - num2 << std::endl;
+}
+void multiple(int num1, int num2)
+{
+	std::cout << num1 * num2 << std::endl;
+}
+void divide(int num1, int num2)
+{
+	std::cout << num1 / num2 << std::endl;
 }
 void spammer(std::string spam)
 {
@@ -29,8 +39,13 @@ void getkeyinput()
 	{
 		if (GetAsyncKeyState(VK_SPACE))
 		{
-			Sleep(100);
+			Sleep(1);
 			std::cout << "Space\n";
+		}
+		else if (GetAsyncKeyState(VK_W))
+		{
+			Sleep(1);
+			std::cout << "W\n";
 		}
 	}
 }
@@ -50,7 +65,7 @@ void keyinputnice(std::string key)
 				std::cout << "A\n";
 			}
 		}
-	}  //pretty sure you can use this and reinterpt it to make a control settings code for a game or something like a reference to the function.
+	}
 	else if (key == "D")
 	{
 		while (keyfart = true)
@@ -65,12 +80,19 @@ void keyinputnice(std::string key)
 }
 void rng()
 {
+	bool stupid2 = true;
 	int stupid1;
 	srand(time(0));
-	std::cout << "RNG A NUMBER RANGING FROM 1st to 2nd\n";
-	std::cout << "First Number: " << std::endl;
-	std::cin >> stupid1;
-	std::cout << rand() % stupid1;
+	// delete while loop if want not to loop ok sorry.
+	while (stupid2 = true)
+	{
+		std::cout << "RNG A NUMBER RANGING FROM 1st to 2nd\n";
+		std::cout << "First Number: " << std::endl;
+
+		std::cin >> stupid1;
+
+		std::cout << rand() % stupid1 << std::endl;
+	}
 }
 void sqr(int num1)
 {
@@ -79,7 +101,6 @@ void sqr(int num1)
 	std::cin >> num1;
 	std::cout << sqrt(num1) << std::endl;
 	
-}
 }
 void reversestring(std::string reversestr)
 {
@@ -95,4 +116,5 @@ void reversestring(std::string reversestr)
 int main()
 {
 	std::cout << "That One Famous Debugging Thing\n";
+	//call funcs here
 }
