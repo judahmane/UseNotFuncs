@@ -72,6 +72,14 @@ void rng()
 	std::cin >> stupid1;
 	std::cout << rand() % stupid1;
 }
+void sqr(int num1)
+{
+	std::cout << "Enter The Two Numbers You Want squared\n";
+	std::cout << "Enter Num: \n";
+	std::cin >> num1;
+	std::cout << sqrt(num1) << std::endl;
+	
+}
 
 int main()
 {
