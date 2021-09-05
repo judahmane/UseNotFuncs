@@ -80,6 +80,17 @@ void sqr(int num1)
 	std::cout << sqrt(num1) << std::endl;
 	
 }
+}
+void reversestring(std::string reversestr)
+{
+	
+	std::cout << "Enter text you want reversed\n";
+	std::cin >> reversestr;
+	
+	reverse(reversestr.begin(), reversestr.end());
+
+	std::cout << reversestr << std::endl;
+}
 
 int main()
 {
