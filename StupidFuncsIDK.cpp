@@ -3,6 +3,8 @@
 #include <stdlib.h>
 #include <conio.h>
 #include <algorithm>
+#include <string>
+#include <fstream>
 
 void stop()
 {
@@ -112,9 +114,42 @@ void reversestring(std::string reversestr)
 
 	std::cout << reversestr << std::endl;
 }
+void haxorpov(std::string weiner)
+{
+	bool txt = true;
+	while(txt = true)
+	{
+		if (GetAsyncKeyState(VK_SPACE))
+		{
+			std::cout << "0000011110111111001111";
+			std::cout << "00010010101010110111111001111";
+			std::cout << "000001111001111";
+			std::cout << "000001111011111100111010010101";
+			std::cout << "000001111100000101010100010100111111001111";
+			std::cout << "000001111011111100111010010101";
+			std::cout << "000001111001111";
+			std::cout << "000001111100000101010100010100111111001111";
+			std::cout << "0000011110111111001111";
+			std::cout << "0011001010";
+			std::cout << "11111001011001010101010";
+			std::cout << "00000000001111111110";
+			std::cout << "01011010010101010101";
+		}
+	}
+}
+void infilefunction(std::string e)
+{
+	std::fstream file;
+	file.open = ("text.txt");
+	file << "Winer";
+	file.close();
+	
+	
+}
 
 int main()
 {
+	
 	std::cout << "That One Famous Debugging Thing\n";
-	//call funcs here
+	infilefunction("");
 }
